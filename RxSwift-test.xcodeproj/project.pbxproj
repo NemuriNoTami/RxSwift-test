@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		32263A962DB13AD600B807D5 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 32263A952DB13AD600B807D5 /* RxCocoa */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		32263A7C2DB135B200B807D5 /* RxSwift-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32263A962DB13AD600B807D5 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = "RxSwift-test";
 			packageProductDependencies = (
+				32263A952DB13AD600B807D5 /* RxCocoa */,
 			);
 			productName = "RxSwift-test";
 			productReference = 32263A7C2DB135B200B807D5 /* RxSwift-test.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 32263A732DB135B200B807D5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				32263A942DB13AD600B807D5 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 32263A7D2DB135B200B807D5 /* Products */;
 			projectDirPath = "";
@@ -333,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32263A942DB13AD600B807D5 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32263A952DB13AD600B807D5 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32263A942DB13AD600B807D5 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32263A742DB135B200B807D5 /* Project object */;
 }
